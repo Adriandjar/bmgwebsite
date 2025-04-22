@@ -1,40 +1,73 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
+    
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+    "header     header"
+    "loop       publi"
+    "artista    artista"
+    "footer     footer";
+}
 
 .menu ul{
-    grid-area: banner;
     background-image: url(../imagenes/BMG\ Banner.jpg);
     width: 100%;
-    height: 260px;
+    height: 215px;
     background-size: cover;
     display: flex;
     justify-content: center;
     }   
 
 .menu ul li a{
-    grid-area: cabeza;
     margin: 50px;
     text-decoration: none;
     color: #ffffff;
     font-size: 26px;
     }
 
+.cabeza{
+    grid-area: header;
+}
+
+.video{
+    grid-area: loop;
+   }
+
+.carousel-publi{
+    grid-area: publi;
+}
+.artista{
+    grid-area: artista;
+}
+
+.pie{
+    grid-area: footer;
+}
+
+
 h1{
     color: #1faec7;
     margin: 30px;
+    font-size: 30px;
     }
     
-.video {
-    grid-area: video;
-        
-    }
-        
+
+
+.carousel-publi article img{
+    width: 300px;
+    border: 2px solid #1faec7;
+    margin-left: 60%;
+    background-color: #ffffff;
+    } 
+
 body{
-    background-color: #0f0c5b;
+    background-color: rgb(4, 4, 72);
     }
 
 h2{
@@ -43,13 +76,8 @@ h2{
     color: #ffffff;
     }
 
-.publicidad article img{
-    grid-area: publicidad;
-    width: 400px;
-    border: 2px solid #1faec7;
-    margin-left: 60%;
-    background-color: #ffffff;
-    }
+
+
 h3{
     font-size: 26px;
     margin: 30px;
@@ -57,15 +85,22 @@ h3{
     color: white;
     }
 
-.programacion article img{
-    grid-area: progimg;
+.artista article{
     width: 400px;
-    border: 5px solid #1faec7;
-    margin-left: 35%;
+    margin: 30px;
     }
 
-.tabla{
+.carousel-prog article img{
+        grid-area: progimg;
+        width: 400px;
+        border: 5px solid #1faec7;
+        margin-left: 35%; 
+    }
+
+
+.table thead tr{
     color: #ffffff;
+    text-align: justify;
     text-align: center;
     }
 
@@ -81,8 +116,27 @@ h3{
     }
     
 footer{
-    grid-area: pie;
-    background-color: black;    
+    background-color: black;   
     text-align: center;
     color: #ffffff;
+    }
+
+    @media (max-width: 768px){
+        .container{
+           grid-template-columns: repeat(2,1fr) ;
+            grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+            grid-template-areas:
+            "header     header"
+            "loop       publi"
+            "artista    artista"
+            "footer     footer";
+        }
+        .menu ul{
+            background-image: url(../imagenes/BMG\ Banner.jpg);
+            width: 100%;
+            height: 215px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            }   
     }
