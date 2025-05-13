@@ -3,7 +3,9 @@
     margin: 0px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
-    
+
+
+ 
 .container{
     display: grid;
     grid-template-columns: repeat(2,1fr) ;
@@ -15,29 +17,16 @@
     "footer     footer";
 }
 
-.menu ul{
-    background-image: url(../imagenes/BMG\ Banner.jpg);
-    width: 100%;
-    height: 215px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    }   
-
-.menu ul li a{
-    margin: 50px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 26px;
-    }
+.banner img{
+        width: 100%;
+        height: 215px;
+        background-size: cover;
+    } 
 
 .cabeza{
     grid-area: header;
 }
 
-.video{
-    grid-area: loop;
-   }
 
 .carousel-publi{
     grid-area: publi;
@@ -60,9 +49,9 @@ h1{
 
 
 .carousel-publi article img{
-    width: 300px;
+    width: 200px;
     border: 2px solid #1faec7;
-    margin-left: 60%;
+    margin-left: 90%;
     background-color: #ffffff;
     } 
 
@@ -72,7 +61,7 @@ body{
 
 h2{
     text-decoration: underline;
-    margin-left: 60%;
+    margin-left: 90%;
     color: #ffffff;
     }
 
@@ -127,7 +116,7 @@ footer{
             grid-template-rows: 1fr, 1fr, 1fr, 1fr;
             grid-template-areas:
             "header     header"
-            "loop       publi"
+            " .       publi"
             "artista    artista"
             "footer     footer";
         }

@@ -10,25 +10,36 @@
 </head>
     <body>
         
-        <div class="container">
+       <div class="container">
+
             <header class="cabeza"> 
-            
+                    
                 <!--Esto es para el menú principal-->
 
-                    <nav class="menu">
-                        <ul>
-                            <li>
-                                <a href="index.html">Inicio</a>
-                                <a href="./pages/programacion.html">Programación</a>
-                                <a href="./pages/contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <nav class="menu">        
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/programacion.html">Programación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="banner">
+                    <img src="./imagenes/BMG Banner.jpg" alt="BMG Banner">
+                </div>   
+
             </header>
         
         <main>
             <h1>Inicio</h1>
-        <!--Este es un video en loop-->
+        <!--Este es el reprooductor de la radio-->
+
             <div class="reproductor">   
                 <iframe src="https://zeno.fm/player/boomerang-radio-argentina" width="700" height="300" frameborder="0" scrolling="no"></iframe><a href="https://zeno.fm/radio/boomerang-radio-argentina/" target="_blank" style="display: block; font-size: 0.9em; line-height: 50px;">Boomerang Radio Station</a>
             </div>

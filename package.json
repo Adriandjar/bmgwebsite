@@ -1,0 +1,23 @@
+{
+  "name": "bmg-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adriandjar/bmgwebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adriandjar/bmgwebsite/issues"
+  },
+  "homepage": "https://github.com/Adriandjar/bmgwebsite#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.87.0"
+  }
+}
