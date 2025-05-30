@@ -1,145 +1,18 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+/* Error: Undefined variable.
+ *   ,
+ * 2 |     font-family: $font-stack;
+ *   |                  ^^^^^^^^^^^
+ *   '
+ *   scss\_base.scss 2:18  @use
+ *   scss\styles.scss 3:1  root stylesheet */
 
-
- 
-
-.container{
-    display: grid;
-    grid-column: 2 / 1fr;
-    grid-template-rows: 1fr, 0.25fr, 0.25fr, 0.25fr;
-    grid-template-areas:
-    "header     header"
-    "artista    artista"
-    "footer     footer";
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      font-family: $font-stack;\d\a   \2502                   ^^^^^^^^^^^\a   \2575 \a   scss\\_base.scss 2:18  @use\a   scss\\styles.scss 3:1  root stylesheet";
 }
-
-.banner img{
-        width: 100%;
-        height: 215px;
-        background-size: cover;
-    } 
-
-.cabeza{
-    grid-area: header;
-}
-
-.container .reproductor{
-    grid-area: rep;
-}
-
-.artista{
-    grid-area: artista;
-}
-.textoartista{
-    grid-area: informacion;
-    padding: 10px;
-    height: 700px;
-    width: 1000px;
-    text-align: center;
-}
-
-.pie{
-    grid-area: footer;
-}
-
-
-h1{
-    color: #1faec7;
-    margin: 30px;
-    font-size: 30px;
-    }
-    
-
-
-
-body{
-    background-color: rgb(4, 4, 72);
-    }
-
-h2{
-    text-decoration: underline;
-    margin-left: 80%;
-    color: #ffffff;
-    }
-
-
-
-h3{
-    font-size: 26px;
-    margin: 30px;
-    text-decoration: underline;
-    color: white;
-    }
-
-.artista article{
-    border: 10px;
-    width: 500px;
-    
-    }
-
-.carousel-prog article img{
-        grid-area: progimg;
-        padding: 10px;
-        width: 400px;
-        border: 3px solid #1faec7;
-        margin-left: 35%; 
-    }
-
-
-.table thead tr{
-    color: #ffffff;
-    text-align: justify;
-    text-align: center;
-    }
-
-.mensaje{
-    color: #ffffff;
-    font-size: 16px;
-    }
-
-.mapa{
-    grid-area: mapa;
-    width: 605px;
-    margin-left: 50%;
-    }
-    
-footer{
-    background-color: black;   
-    text-align: center;
-    color: #ffffff;
-    }
-
-    @media (max-width: 768px){
-        .container{
-           grid-template-columns: repeat(2,1fr) ;
-            grid-template-rows: 1fr, 1fr, 1fr, 1fr;
-            grid-template-areas:
-            "header     header"
-            "artista    artista"
-            "footer     footer";
-        }
-        .banner img{
-            width: 100%;
-            height: 215px;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            }   
-        }
-
-    @media (max-width: 480px){
-       
-
-
-        .banner img{
-            width: 100%;
-            height: 215px;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            }   
-        }
